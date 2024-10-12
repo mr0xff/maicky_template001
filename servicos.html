@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu-vertical.css">
+    <title>template 001</title>
+</head>
+<body>
+    <div class="menu-vertical" id="menu-vertical">
+        <div class="logo">
+            <h1>Logo</h1>
+            <button type="button" id="btnclose">x</button>
+        </div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="#cd-cards" id="inicial">Serviços</a>
+            <a href="#">Sobre</a>
+            <a href="#bn-2">Ajuda</a>
+        </div>
+    </div>
+    <header>
+        <div class="logo">
+            <h1>Logo</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#cd-cards" id="inicial">Serviços</a>
+            <a href="#">Sobre</a>
+            <a href="#bn-2">Ajuda</a>
+        </nav>
+        <nav>
+            <a href="#">Contact</a>
+            <a href="" id="getstart">Get start</a>
+        </nav>
+        <button type="button" id="btnmenu">Menu</button>
+    </header>
+
+    <main>
+        <div class="banner bn-1">
+            <div class="conteudo">
+                <h1>Explore os nosso serviços, e <span>entre em contacto</span> a qualquer altura!</h1>
+                <p id="descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, asperiores.</p>
+                <br>
+                <br>
+                <nav>
+                    <a href="" id="getstart">Get start the visit</a>
+                </nav>
+            </div>
+            <div class="image">
+                <img src="imgs/banner 3.png" alt="" srcset="">
+            </div>
+        </div>
+        <div class="container cd-cards" id="cd-cards">
+            <div class="theme">
+                <h1>Nossos <span>melhores serviços</span></h1>
+                <p id="descricao">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <h1><span>Criação de ..</span></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, obcaecati ullam ratione rerum cumque harum nobis vel voluptates, nostrum accusantium fuga, veniam voluptate neque dolore!</p>
+                    <br>
+                    <nav>
+                        <a href="#" id="getstart">Get start</a>
+                    </nav>
+                </div>
+                <div class="card middle">
+                    <h1>Venda de..</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, obcaecati ullam ratione rerum cumque harum nobis vel voluptates, nostrum accusantium fuga, veniam voluptate neque dolore!</p>
+                    <br>
+                    <nav>
+                        <a href="#" id="getstart">Get start</a>
+                    </nav>
+                </div>
+                <div class="card">
+                    <h1><span>Prestação de ..</span></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, obcaecati ullam ratione rerum cumque harum nobis vel voluptates, nostrum accusantium fuga, veniam voluptate neque dolore!</p>
+                    <br>
+                    <nav>
+                        <a href="#" id="getstart">Get start</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="arroba">
+            <p>th@yone</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>Sobre Nós</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, fugiat nobis. Quae vel accusamus praesentium quas beatae odio, veniam repellendus!</p>
+            </div>
+
+            <div class="footer-section links">
+                <h2>Links Úteis</h2>
+                <ul>
+                    <li><a href="#" id="inicial">Home</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Ajuda</a></li>                    
+                </ul>
+            </div>
+
+            <div class="footer-section contact">
+                <h2>Contato</h2>
+                <p><i class="fas fa-phone"></i> +244 950-683-934</p>
+                <p><i class="fas fa-envelope"></i> makondadaniel2023@gmail.com</p>
+            </div>
+
+            <div class="footer-section social">
+                <h2>Siga-nos</h2>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Seu Site. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+    <script>
+        let mn = document.getElementById("menu-vertical")
+        document.getElementById("btnmenu").addEventListener("click", function(){
+            mn.style.transform = "translateY(0%)"    
+        })
+        document.getElementById("btnclose").addEventListener("click", function(){
+            mn.style.transform = "translateY(-100%)"    
+        })
+    </script>
+</body>
+</html>
